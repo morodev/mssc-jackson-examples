@@ -22,9 +22,11 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e7bef623-8e5f-406b-ad51-5f8620bc12c8" name="Default Changelist" comment="109. Setting Property Names with Jackson">
+    <list default="true" id="e7bef623-8e5f-406b-ad51-5f8620bc12c8" name="Default Changelist" comment="110. Using @JsonFormat with jackson">
+      <change afterPath="$PROJECT_DIR$/src/main/java/guru/springframework/msscjacksonexamples/model/LocalDateSerializer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/guru/springframework/msscjacksonexamples/model/BeerDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/guru/springframework/msscjacksonexamples/model/BeerDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/guru/springframework/msscjacksonexamples/model/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/guru/springframework/msscjacksonexamples/model/BaseTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,7 +44,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="json-property" />
+        <entry key="$PROJECT_DIR$" value="json-format" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -76,7 +78,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.BeerDtoKebabTest.testKebab">
+  <component name="RunManager" selected="JUnit.BeerDtoTest.testSerializeDto">
     <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
@@ -163,10 +165,10 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.BeerDtoTest.testSerializeDto" />
         <item itemvalue="JUnit.BeerDtoKebabTest.testKebab" />
         <item itemvalue="JUnit.BeerDtoSnakeTest.testSnake" />
         <item itemvalue="JUnit.BeerDtoTest.testDeserialize" />
-        <item itemvalue="JUnit.BeerDtoTest.testSerializeDto" />
       </list>
     </recent_temporary>
   </component>
@@ -179,7 +181,7 @@
       <option name="presentableId" value="Default" />
       <updated>1611408129622</updated>
       <workItem from="1611408130718" duration="111000" />
-      <workItem from="1611408330360" duration="4620000" />
+      <workItem from="1611408330360" duration="5775000" />
     </task>
     <task id="LOCAL-00001" summary="105. Json Testing with Spring Boot">
       <created>1611409378753</created>
@@ -209,7 +211,14 @@
       <option name="project" value="LOCAL" />
       <updated>1611412275117</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="110. Using @JsonFormat with jackson">
+      <created>1611414748960</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1611414748960</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -231,25 +240,30 @@
     <MESSAGE value="106. Jackson Property Naming Strategies" />
     <MESSAGE value="107/8. Assignment - Configure Property Naming Strategy" />
     <MESSAGE value="109. Setting Property Names with Jackson" />
-    <option name="LAST_COMMIT_MESSAGE" value="109. Setting Property Names with Jackson" />
+    <MESSAGE value="110. Using @JsonFormat with jackson" />
+    <option name="LAST_COMMIT_MESSAGE" value="110. Using @JsonFormat with jackson" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="2517" height="571" key="GridCell.Tab.0.bottom" timestamp="1611414531195">
+    <state x="1085" y="406" key="#com.intellij.ide.util.MemberChooser" timestamp="1611415216188">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="571" key="GridCell.Tab.0.bottom/-1920.144.1920.1040/0.0.2560.1400@0.0.2560.1400" timestamp="1611414531195" />
-    <state width="2517" height="571" key="GridCell.Tab.0.center" timestamp="1611414531195">
+    <state x="1085" y="406" key="#com.intellij.ide.util.MemberChooser/-1920.144.1920.1040/0.0.2560.1400@0.0.2560.1400" timestamp="1611415216188" />
+    <state width="2517" height="551" key="GridCell.Tab.0.bottom" timestamp="1611415492612">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="571" key="GridCell.Tab.0.center/-1920.144.1920.1040/0.0.2560.1400@0.0.2560.1400" timestamp="1611414531195" />
-    <state width="2517" height="571" key="GridCell.Tab.0.left" timestamp="1611414531195">
+    <state width="2517" height="551" key="GridCell.Tab.0.bottom/-1920.144.1920.1040/0.0.2560.1400@0.0.2560.1400" timestamp="1611415492612" />
+    <state width="2517" height="551" key="GridCell.Tab.0.center" timestamp="1611415492612">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="571" key="GridCell.Tab.0.left/-1920.144.1920.1040/0.0.2560.1400@0.0.2560.1400" timestamp="1611414531195" />
-    <state width="2517" height="571" key="GridCell.Tab.0.right" timestamp="1611414531195">
+    <state width="2517" height="551" key="GridCell.Tab.0.center/-1920.144.1920.1040/0.0.2560.1400@0.0.2560.1400" timestamp="1611415492612" />
+    <state width="2517" height="551" key="GridCell.Tab.0.left" timestamp="1611415492612">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="571" key="GridCell.Tab.0.right/-1920.144.1920.1040/0.0.2560.1400@0.0.2560.1400" timestamp="1611414531195" />
+    <state width="2517" height="551" key="GridCell.Tab.0.left/-1920.144.1920.1040/0.0.2560.1400@0.0.2560.1400" timestamp="1611415492612" />
+    <state width="2517" height="551" key="GridCell.Tab.0.right" timestamp="1611415492612">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="2517" height="551" key="GridCell.Tab.0.right/-1920.144.1920.1040/0.0.2560.1400@0.0.2560.1400" timestamp="1611415492612" />
     <state width="2517" height="492" key="GridCell.Tab.1.bottom" timestamp="1611410596821">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
@@ -266,10 +280,10 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state width="2517" height="492" key="GridCell.Tab.1.right/-1920.144.1920.1040/0.0.2560.1400@0.0.2560.1400" timestamp="1611410596821" />
-    <state x="872" y="420" key="Vcs.Push.Dialog.v2" timestamp="1611412276500">
+    <state x="872" y="420" key="Vcs.Push.Dialog.v2" timestamp="1611414750604">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="872" y="420" key="Vcs.Push.Dialog.v2/-1920.144.1920.1040/0.0.2560.1400@0.0.2560.1400" timestamp="1611412276500" />
+    <state x="872" y="420" key="Vcs.Push.Dialog.v2/-1920.144.1920.1040/0.0.2560.1400@0.0.2560.1400" timestamp="1611414750604" />
     <state x="891" y="378" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1611409221779">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
