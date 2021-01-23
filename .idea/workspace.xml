@@ -22,11 +22,11 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e7bef623-8e5f-406b-ad51-5f8620bc12c8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/guru/springframework/msscjacksonexamples/model/BaseTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/guru/springframework/msscjacksonexamples/model/BeerDtoTest.java" afterDir="false" />
+    <list default="true" id="e7bef623-8e5f-406b-ad51-5f8620bc12c8" name="Default Changelist" comment="105. Json Testing with Spring Boot">
+      <change afterPath="$PROJECT_DIR$/src/test/java/guru/springframework/msscjacksonexamples/model/BeerDtoSnakeTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/application-snake.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mssc-jackson-examples.iml" beforeDir="false" afterPath="$PROJECT_DIR$/mssc-jackson-examples.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,7 +44,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="main" />
+        <entry key="$PROJECT_DIR$" value="spring-boot-json-test" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -78,7 +78,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.BeerDtoTest.testDeserialize">
+  <component name="RunManager" selected="JUnit.BeerDtoSnakeTest.testSnake">
     <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
@@ -88,6 +88,22 @@
       <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BeerDtoSnakeTest.testSnake" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="mssc-jackson-examples" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="guru.springframework.msscjacksonexamples.model.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="guru.springframework.msscjacksonexamples.model" />
+      <option name="MAIN_CLASS_NAME" value="guru.springframework.msscjacksonexamples.model.BeerDtoSnakeTest" />
+      <option name="METHOD_NAME" value="testSnake" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -133,6 +149,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.BeerDtoSnakeTest.testSnake" />
         <item itemvalue="JUnit.BeerDtoTest.testDeserialize" />
         <item itemvalue="JUnit.BeerDtoTest.testSerializeDto" />
       </list>
@@ -147,8 +164,16 @@
       <option name="presentableId" value="Default" />
       <updated>1611408129622</updated>
       <workItem from="1611408130718" duration="111000" />
-      <workItem from="1611408330360" duration="987000" />
+      <workItem from="1611408330360" duration="1627000" />
     </task>
+    <task id="LOCAL-00001" summary="105. Json Testing with Spring Boot">
+      <created>1611409378753</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1611409378753</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -165,23 +190,31 @@
       </map>
     </option>
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="105. Json Testing with Spring Boot" />
+    <option name="LAST_COMMIT_MESSAGE" value="105. Json Testing with Spring Boot" />
+  </component>
   <component name="WindowStateProjectService">
-    <state width="2517" height="658" key="GridCell.Tab.0.bottom" timestamp="1611409303587">
+    <state width="2517" height="658" key="GridCell.Tab.0.bottom" timestamp="1611409329289">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="658" key="GridCell.Tab.0.bottom/-1920.144.1920.1040/0.0.2560.1400@0.0.2560.1400" timestamp="1611409303587" />
-    <state width="2517" height="658" key="GridCell.Tab.0.center" timestamp="1611409303587">
+    <state width="2517" height="658" key="GridCell.Tab.0.bottom/-1920.144.1920.1040/0.0.2560.1400@0.0.2560.1400" timestamp="1611409329289" />
+    <state width="2517" height="658" key="GridCell.Tab.0.center" timestamp="1611409329289">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="658" key="GridCell.Tab.0.center/-1920.144.1920.1040/0.0.2560.1400@0.0.2560.1400" timestamp="1611409303587" />
-    <state width="2517" height="658" key="GridCell.Tab.0.left" timestamp="1611409303586">
+    <state width="2517" height="658" key="GridCell.Tab.0.center/-1920.144.1920.1040/0.0.2560.1400@0.0.2560.1400" timestamp="1611409329289" />
+    <state width="2517" height="658" key="GridCell.Tab.0.left" timestamp="1611409329288">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="658" key="GridCell.Tab.0.left/-1920.144.1920.1040/0.0.2560.1400@0.0.2560.1400" timestamp="1611409303586" />
-    <state width="2517" height="658" key="GridCell.Tab.0.right" timestamp="1611409303587">
+    <state width="2517" height="658" key="GridCell.Tab.0.left/-1920.144.1920.1040/0.0.2560.1400@0.0.2560.1400" timestamp="1611409329288" />
+    <state width="2517" height="658" key="GridCell.Tab.0.right" timestamp="1611409329289">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="658" key="GridCell.Tab.0.right/-1920.144.1920.1040/0.0.2560.1400@0.0.2560.1400" timestamp="1611409303587" />
+    <state width="2517" height="658" key="GridCell.Tab.0.right/-1920.144.1920.1040/0.0.2560.1400@0.0.2560.1400" timestamp="1611409329289" />
+    <state x="872" y="420" key="Vcs.Push.Dialog.v2" timestamp="1611409380008">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="872" y="420" key="Vcs.Push.Dialog.v2/-1920.144.1920.1040/0.0.2560.1400@0.0.2560.1400" timestamp="1611409380008" />
     <state x="891" y="378" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1611409221779">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
